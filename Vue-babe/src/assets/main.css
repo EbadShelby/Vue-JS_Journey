@@ -1,0 +1,57 @@
+@import './base.css';
+@import 'tailwindcss';
+
+#app {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  font-weight: normal;
+}
+
+button {
+  @apply border-2 p-2 rounded-xl bg-gray-700 transition-all
+}
+button:hover {
+  @apply bg-gray-800
+}
+button:active {
+  @apply bg-gray-900
+}
+
+input {
+  @apply border-2 p-2
+}
+a,
+.green {
+  text-decoration: none;
+  color: hsla(160, 100%, 37%, 1);
+  transition: 0.4s;
+  padding: 3px;
+}
+
+@media (hover: hover) {
+  a:hover {
+    background-color: hsla(160, 100%, 37%, 0.2);
+  }
+}
+
+@layer utilities {
+  /* Dev-only animation effect */
+  .dev-animate * {
+    transition: all 0.3s ease-in-out;
+  }
+
+  /* Optional: subtle highlight flash when element updates */
+  .dev-animate *:not(html):not(body) {
+    animation: devFlash 0.5s ease;
+  }
+
+  @keyframes devFlash {
+    from {
+      background-color: rgba(21, 103, 16, 0.3);
+    }
+    to {
+      background-color: transparent;
+    }
+  }
+}

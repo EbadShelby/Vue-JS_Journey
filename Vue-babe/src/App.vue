@@ -50,7 +50,6 @@ const deleteTask = (index) => {
       <label for="newTask"></label>
       <input type="text" placeholder="Enter Todo" id="newTask" name="newTask" v-model="newTask">
       <button type="submit">submit</button>
-      
     </form>
   </main>
 </template>

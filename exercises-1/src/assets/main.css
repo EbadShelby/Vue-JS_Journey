@@ -1,0 +1,13 @@
+@import 'tailwindcss';
+
+header {
+  @apply font-bold 
+}
+
+body {
+  @apply text-5xl font-bold 
+}
+
+html {
+  @apply text-2xl
+}

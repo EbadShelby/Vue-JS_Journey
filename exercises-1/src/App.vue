@@ -15,11 +15,6 @@ const deleteTask = (index) => {
 </script>
 
 <template>
-  <div class="dev">
-    <div class="box"></div>
-    <div class="box"></div>
-    <div class="box"></div>
-  </div>
   <div class="scan-lines"></div>
   <div class="todo">
     <h1>Vue Todo</h1>

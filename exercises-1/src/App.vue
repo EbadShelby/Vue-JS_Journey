@@ -19,7 +19,7 @@ const deleteTask = (index) => {
   <div class="todo">
     <h1>Vue Todo</h1>
     <p class="no-task" v-if="tasks.length === 0">No task yet!</p>
-    <p class="remaining-tasks">
+    <p class="remaining-tasks" v-else-if="tasks.length !== 0">
       {{ tasks.filter((task) => !task.completed).length }} task<span
         v-if="tasks.filter((task) => !task.completed).length > 1"
         >s</span
